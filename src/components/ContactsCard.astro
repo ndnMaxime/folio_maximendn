@@ -1,0 +1,34 @@
+---
+import Card from "./Card/index.astro";
+import { LINKS } from "../lib/constants";
+import { Icon } from 'astro-icon/components'
+import Button from "./Button.astro";
+---
+
+<Card colSpan="md:col-span-1,5" rowSpan="md:row-span-6">
+  <div class="h-full">
+    <address class="flex flex-col mt-4">
+      <h2 class="text-gray-500 mb-4">Contact</h2>
+      <p style="font-size: 14px;">maxime.naudin@edu.univ-eiffel.fr</p>
+
+    </address>
+    <div class="flex flex-col mt-4 w-fit">
+      <h2 class="text-gray-500 mb-4">Socials</h2>
+      <br>
+      <div class="flex gap-4">
+        <a href={LINKS.github} aria-label="github profile" target="_blank">
+          <Button aria-label="github profile">
+            <Icon name="ri:github-fill" class="h-6" />
+            <span class="sr-only">GitHub Profile</span>
+          </Button>
+        </a>
+        <a href={LINKS.linkedin} aria-label="linkeding profile" target="_blank">
+          <Button aria-label="linkedin profile">
+            <Icon name="ri:linkedin-box-fill" class="h-6" />
+            <span class="sr-only">Linkedin Profile</span>
+          </Button>
+        </a>
+      </div>
+  </div>
+</Card>
+

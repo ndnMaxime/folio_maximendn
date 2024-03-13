@@ -1,0 +1,29 @@
+---
+import Card from "./Card/index.astro";
+import Button from "./Button.astro";
+import { LINKS } from "../lib/constants";
+import { Icon } from 'astro-icon/components'
+import Tooltip from "./Tooltip/index";
+---
+
+<Card colSpan="md:col-span-3" rowSpan="md:row-span-4">
+  <div class="flex w-full h-full">
+    <div class="flex flex-col justify-between md:max-h-[300px] gap-4">
+      <div class="flex flex-col h-full">
+        <h6 class="text-sm font-light m-0 text-gray-500 mb-6">Mis à jour le 30 janvier 2024</h6>
+        <p class="m-0 font-light text-xl">
+          Bonjour! Je suis  <b class="font-bold">Maxime Naudin</b>, un étudiant en master 
+          Data Analyst à l'IAE Paris-Est. Bienvenu sur mon portfolio, vous pouvez retrouver
+          les différents projets que j'ai réalisé et des liens utiles pour me joindre facilement.
+        </p>
+      </div>
+    </div>
+    <img
+      width="300"
+      height="300"
+      src="/me.webp"
+      class="w-auto max-h-[300px] select-none absolute right-[-110px] bottom-[-20px] z-[-1] opacity-50 md:opacity-100 md:relative md:right-auto md:bottom-auto md:z-auto pointer-events-none"
+      alt="memoji of gianmarco"
+    />
+  </div>
+</Card>
