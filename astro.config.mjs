@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import netlify from '@astrojs/netlify';
 import sitemap from "@astrojs/sitemap";
 import netlify from "@astrojs/netlify";
 import robotsTxt from "astro-robots-txt";
@@ -10,8 +11,6 @@ import { remarkReadingTime } from "./src/lib/ remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ndnMaxime.github.io',
-  base: '/portfolio_maximendn ',
   integrations: [
     sitemap(),
     robotsTxt({
