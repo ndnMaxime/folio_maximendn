@@ -11,7 +11,7 @@ import { remarkReadingTime } from "./src/lib/remark-reading-time.mjs";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ndnMaxime.github.io',
-  base: '/portfolio_maximendn ',
+  base: '/folio_maximendn ',
   integrations: [
     sitemap(),
     robotsTxt({
